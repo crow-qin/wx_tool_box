@@ -1,0 +1,13 @@
+<wxs module="filter" src="./home-item.wxs"></wxs>
+<view class="h-all f-column f-ac f-j-sb" bind:tap="openPage">
+  <view class="home-icon box-100 b-r-half color-f text-center h-100 f-40-b" style="background: {{item.src?'transparent':item.color}}">
+    <image class="box-all" wx:if="{{item.src}}" src="" mode="aspectFit">
+    </image>
+    <block wx:else>
+      {{filter.split(item.text)[0]}}
+    </block>
+  </view>
+  <view class="color-3 f-28">
+    {{item.text}}
+  </view>
+</view>

@@ -1,0 +1,7 @@
+.home-content {
+  
+}
+.home-item {
+  flex-basis: calc(100% / 3);
+  height: 160rpx;
+}

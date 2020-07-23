@@ -1,0 +1,5 @@
+@import '/app.wxss';
+.home-icon {
+  flex-basis: 100rpx;
+  /* border: 4rpx solid #888; */
+}

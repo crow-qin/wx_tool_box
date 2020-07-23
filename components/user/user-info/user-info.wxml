@@ -1,0 +1,8 @@
+<view class="h-200 w-all b-r-20 f-ac f-column">
+  <button wx:if="{{!hasInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="openPage" class="box-120 b-r-half" src="{{userInfo.avatarUrl}}"  lazy-load="false" >
+      </image>
+      <view class="">{{userInfo.nickName}}</view>
+    </block>
+</view>

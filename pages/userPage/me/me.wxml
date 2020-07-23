@@ -1,0 +1,4 @@
+<view class="container">
+	<navbar title="个人中心" background="#0084ff" back="{{false}}"></navbar>
+	<user-info userInfo="{{userInfo}}" hasInfo="{{hasInfo}}" canIUse="{{canIUse}}" bind:getUserInfo="getUserInfo" bind:openPage="openPage"></user-info>
+</view>

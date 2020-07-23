@@ -1,0 +1,6 @@
+var self = {
+  split:function(str,reg='') {
+    return str.split(reg)
+  }
+}
+module.exports = self

@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="w-all h-88 f-ac f-j-sb">
+    <view wx:for="{{tabList}}" wx:for-item="item" wx:for-index="i" bind:tap="switchTab(i)">
+      {{item}}
+    </view>
+  </view>
+  <!-- 摇骰子页面 -->
+  <view wx:if="{{curTab==0}}">
+    <view class="w-all">
+      <view class="box-88 b-r-20" wx:for="{{billList}}">
+        <view class="iocnfont" class="icon-touzi{{item.val}}"></view>
+      </view>
+    </view>
+  </view>
+  <!-- 图表统计页面 -->
+  <view wx:else></view>
+</view>

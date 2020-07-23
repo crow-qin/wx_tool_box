@@ -1,0 +1,8 @@
+<view class="container">
+  <navbar></navbar>
+  <view class="w-all f-wrap ">
+    <view class="home-item" wx:for="{{mainList}}" wx:for-item="item" wx:for-index="i">
+      <home-item item="{{item}}" bind:openPage="openPage"></home-item>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,31 @@
+/* flex */
+.flex, .f-ac, .f-column {
+  display: flex;
+}
+.f-ac, .f-aj-c {
+  align-items: center;
+}
+.f-column {
+  flex-direction: column;
+}
+
+.box-120 {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+/* width */
+.w-all {
+  width: 100%;
+}
+
+.h-200 {
+  height: 200rpx;
+}
+/* border-radius */
+.b-r-half {
+  border-radius: 50%;
+}
+.b-r-20 {
+  border-radius: 10rpx;
+}

@@ -1,0 +1,68 @@
+@import '/app.wxss';
+
+.status-nav-bar{
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar{
+  height:96rpx;
+  margin-top: 40rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.placeholder{
+  height:136rpx;
+}
+
+.nav-action-block{
+  display: flex;
+  margin-right: 20rpx;
+}
+
+.nav-title{
+  font-size: 36rpx;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  flex: 1;
+
+}
+
+/* 导航栏操作按钮 */
+.nav-action-block image{
+  width: 88rpx;
+  height: 88rpx;
+  object-fit: contain;
+}
+
+.nav-action-block image:active{
+  background: rgba(100,100,100,0.1);
+}
+
+
+.navigation-icon:active{
+  opacity: 0.3;
+}
+
+/* 返回键图标 */
+.navigation-back-icon{
+  border-radius: 40rpx;
+  border: 1rpx solid #666;
+  width: 40rpx;
+  height: 40rpx;
+  padding: 10rpx;
+}
+
+.title-place-holder{
+  width: 0rpx;
+  height: 40rpx;
+}
