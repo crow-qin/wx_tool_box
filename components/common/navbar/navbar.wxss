@@ -29,7 +29,7 @@
 
 .nav-title{
   font-size: 36rpx;
-  font-weight: bold;
+  font-weight: 700;
   position: absolute;
   width: 100%;
   text-align: center;
@@ -38,16 +38,15 @@
 }
 
 /* 导航栏操作按钮 */
-.nav-action-block image{
+.nav-action-block view{
   width: 88rpx;
   height: 88rpx;
   object-fit: contain;
 }
 
-.nav-action-block image:active{
+.nav-action-block view:active{
   background: rgba(100,100,100,0.1);
 }
-
 
 .navigation-icon:active{
   opacity: 0.3;

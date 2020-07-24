@@ -21,6 +21,7 @@ Page({
     ]
   },
   openPage(e) {
+    console.log(e)
     Pageu.navTo(e.detail)
   }
 })

@@ -25,9 +25,10 @@ Page({
     totalBill: 1
   },
   // watch(data,)
-  switchTab(i) {
+  switchTab(e) {
+    console.log(e)
     this.setData({
-      curTab: i
+      curTab: e.target.dataset.index
     })
   },
   startRandom() {
@@ -40,28 +41,49 @@ Page({
     let that = this
     if (num >= end) {
       clearTimeout(time);
+      let sum = 0
+      that.data.billList.forEach(v=>{
+        if(v.enable) {
+          sum += v.val
+        }
+      })
+      that.setData({
+        sum 
+      })
     }
     else {
       time = setTimeout(function () {
         // console.log(num);
-        let arr = that.billList.map(v=>{
+        let arr = that.data.billList.map(v=>{
           if(v.enable) {
-
             let val = that.randomNum()
             return {...v,val}
           }
           return v
 
         })
-        this.setData({
+        that.setData({
           billList: arr
         })
         that.setTimeouts(num)
       }, delay);
     }
   },
-  randomNum(range=7, start=1) {
+  randomNum(range=6, start=1) {
     return parseInt(Math.random()*range)+start
+  },
+  calcVal(e) {
+    console.log(e)
+    let value = e.detail
+    let arr = this.data.billList.map((v,i)=>{
+      return i<value ? {...v,enable: true} : {...v,enable: false}
+    })
+    console.log(value)
+    this.setData({
+      totalBill: value,
+      billList: arr
+    })
+    console.log(this.data)
   }
 
 })

@@ -5,14 +5,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   box-sizing: border-box;
 } 
 view {
   box-sizing: border-box;
 }
 page {
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  height: 100%;
 }
 
 /* flex */
@@ -33,6 +34,12 @@ page {
 }
 .f-wrap {
   flex-wrap: wrap;
+}
+.f1 {
+  flex: 1;
+}
+.f-b-3 {
+  flex-basis: calc(100% / 3);
 }
 
 .box-all {
@@ -68,7 +75,14 @@ page {
   height: 100rpx;
   line-height: 100rpx;
 }
-
+.h-88 {
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.h-60 {
+  height: 60rpx;
+  line-height: 60rpx;
+}
 
 /* border-radius */
 .b-r-half {
@@ -77,9 +91,21 @@ page {
 .b-r-20 {
   border-radius: 10rpx;
 }
+
+
+.f-80 {
+  font-size: 80rpx;
+}
+.f-64 {
+  font-size: 64rpx;
+}
 .f-40-b {
   font-size: 40rpx;
   font-weight: bold;
+}
+.f-36-800 {
+  font-size: 36rpx;
+  font-weight: 800;
 }
 .f-32 {
   font-size: 32rpx;
@@ -108,6 +134,9 @@ page {
 .color-main {
   color: #9687f7;
 }
+.color-red {
+  color: #e4393c;
+}
 .color-f {
   color: #ffffff;
 }
@@ -117,6 +146,50 @@ page {
 .color-8 {
   color: #888888;
 }
+.color-6 {
+  color: #666666;
+}
 .color-3 {
   color: #333333;
+}
+
+.o-03 {
+  opacity: 0.3;
+}
+
+.ban-tap {
+  pointer-events: none;
+}
+
+.m-r-20 {
+  margin-right: 20rpx;
+}
+
+.p-32 {
+  padding-top: 32rpx;
+  padding-bottom: 32rpx;
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+}
+.p-tb-32 {
+  padding-top: 32rpx;
+  padding-bottom: 32rpx;
+}
+.p-b-32 {
+  padding-bottom: 32rpx;
+}
+
+.btn-all {
+  width: 100%;
+  border-radius: 20rpx;
+  text-align: center;
+}
+.btn-add {
+  width: 100%;
+  border-radius: 20rpx;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background-color: #9687f7;
+  color: #ffffff;
 }

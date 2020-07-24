@@ -1,0 +1,5 @@
+<view class="f-ac">
+  <view class="num-btn {{value<=min?'o-03 ban-tap':''}}" bind:tap="calcVal" data-type="sub">-</view>
+  <input class="num-ipt color-6" type="number" disabled="{{true}}" value="{{value}}" />
+  <view class="num-btn {{value>=max?'o-03 ban-tap':''}}" bind:tap="calcVal" data-type="add">+</view>
+</view>

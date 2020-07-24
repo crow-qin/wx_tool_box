@@ -1,25 +1,22 @@
 <view>
 		<view class="status-nav-bar" style="{{statusNavBarStyle}}">
 		
-		<view class="nav-bar" style="{{navBarStyle}}">
+		<view class="nav-bar w-all" style="{{navBarStyle}}">
 			
 			<!-- 导航栏操作按钮 -->
 			<view class="nav-action-block">
 				
 				<!-- 导航栏返回键 -->
-				<view	wx:if="back" bind:tap="goBack" class="iconfont icon-back" ></view>
-			  
-			
-				
+				<view	wx:if="{{back}}" bind:tap="goBack" class="iconfont icon-back" ></view>
 				<slot></slot>
 					
 				<!-- 导航栏标题 -->
-				<view class="nav-title" class="{{fontColor}}" wx:if="{{title}}">
-					{{title}}
-				</view>
 			</view>			
+			<view class="nav-title f1 {{fontColor}}" wx:if="{{title}}">
+				{{title}}
+			</view>
 		</view>
 				
 	</view>
-		<view wx:if="placeholder" class="placeholder" style="{{placeholderStyle}}"></view>
-	</view>
+	<view wx:if="placeholder" class="placeholder" style="{{placeholderStyle}}"></view>
+</view>

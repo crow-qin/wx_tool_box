@@ -1,6 +1,5 @@
 Component({
   data: {
-    isDeviceMenuShow:false,
     placeholderStyle:"",
     navBarStyle:"",
     statusNavBarStyle:"",
@@ -26,7 +25,7 @@ Component({
     },
     fontColor: {
       type:String,
-      default: 'color-0'
+      default: 'color-3'
     },
     // 为返回键增加额外功能
     addBack: {

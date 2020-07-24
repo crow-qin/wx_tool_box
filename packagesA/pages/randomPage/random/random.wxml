@@ -1,17 +1,26 @@
 <view class="container">
-  <view class="w-all h-88 f-ac f-j-sb">
-    <view wx:for="{{tabList}}" wx:for-item="item" wx:for-index="i" bind:tap="switchTab(i)">
+  <navbar title="摇一摇"></navbar>
+  <view class="w-all f-ac f-j-sb">
+    <view class="text-center f1 h-88 {{index==curTab?'color-main':''}}" wx:for="{{tabList}}" bind:tap="switchTab" data-index="{{index}}">
       {{item}}
     </view>
   </view>
   <!-- 摇骰子页面 -->
-  <view wx:if="{{curTab==0}}">
-    <view class="w-all">
-      <view class="box-88 b-r-20" wx:for="{{billList}}">
-        <view class="iocnfont" class="icon-touzi{{item.val}}"></view>
+  <view wx:if="{{curTab==0}}" class="w-all f1 f-column p-32">
+    <view class="w-all flex f1">
+      <view class="f-aj-c b-r-20 f-b-3 h-100" wx:for="{{billList}}">
+        <view class="f-80 color-6 box-100 text-center iconfont icon-touzi{{item.val}} {{index<totalBill? 'act-bill':''}}"></view>
       </view>
     </view>
+    <view class="f-ac">
+      <view class="m-r-20">要来几颗？</view>
+      <number-box value="{{totalBill}}" min="1" max="{{billList.length}}" bind:calcVal="calcVal"></number-box>
+    </view>
+    <view class="p-tb-32">你的点数:
+      <text class="color-red f-36-800">{{sum}}</text>
+      </view>
+    <view bind:tap="startRandom" class="btn-add">摇一摇</view>
   </view>
   <!-- 图表统计页面 -->
-  <view wx:else></view>
-</view>
+  <view wx:else class="w-all f1">2</view>
+</view>  

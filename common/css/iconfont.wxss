@@ -20,19 +20,19 @@
   content: "\e627";
 }
 
-.icon-touzi2:before {
+.icon-touzi4:before {
   content: "\e628";
 }
 
-.icon-touzi3:before {
+.icon-touzi2:before {
   content: "\e629";
 }
 
-.icon-touzi4:before {
+.icon-touzi5:before {
   content: "\e62a";
 }
 
-.icon-touzi5:before {
+.icon-touzi3:before {
   content: "\e62b";
 }
 

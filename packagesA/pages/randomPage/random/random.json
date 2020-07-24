@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "number-box": "/components/common/number-box/number-box"
+  }
+}

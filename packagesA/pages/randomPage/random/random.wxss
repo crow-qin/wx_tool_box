@@ -1,0 +1,5 @@
+.act-bill {
+  border-radius: 10rpx;
+  border: 4rpx solid #9687f7;
+  line-height: 92rpx;
+}

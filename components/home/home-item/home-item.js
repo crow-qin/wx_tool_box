@@ -2,12 +2,17 @@ Component({
   data: {},
   properties: {
     item: {
-      type: Function
+      type: Object
     }
+  },
+  onLoad() {
+    console.log(this.item)
+
   },
   methods: {
     openPage() {
-      this.triggerEvent('openPage',item.url)
+      console.log(this.properties.item)
+      this.triggerEvent('openPage',this.properties.item.url)
     }
   }
 })

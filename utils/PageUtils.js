@@ -5,9 +5,9 @@ const self = {
 
   navTo(url,data={}) {
     if(data) {
-      url = url + "?" + KEY_DATA + "=" + encodeURIComponent(JSON.stringify(data))
+      url = url + "?data" + "=" + encodeURIComponent(JSON.stringify(data))
     }
-    wx.wx.navigateTo({
+    wx.navigateTo({
       url: url
     })
   },

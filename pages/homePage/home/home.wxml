@@ -1,7 +1,7 @@
 <view class="container">
-  <navbar></navbar>
+  <navbar back="{{false}}"></navbar>
   <view class="w-all f-wrap ">
-    <view class="home-item" wx:for="{{mainList}}" wx:for-item="item" wx:for-index="i">
+    <view class="home-item" wx:for="{{mainList}}">
       <home-item item="{{item}}" bind:openPage="openPage"></home-item>
     </view>
   </view>
